@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CFS - Voltra Automotive | Sioux Falls, SD</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#d9962b;--ink:#1b1b1b;--text:#2a2a2a;--muted:#6f6f6f;--bg:#fff;--alt:#f4f4f4;--card:#fff;--line:#e6e6e6;--hero:#1b1b1b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--text:#eee;--muted:#aaa;--bg:#121212;--alt:#1a1a1a;--card:#222;--line:#333;color-scheme:dark}}
+:root[data-theme="dark"]{--text:#eee;--muted:#aaa;--bg:#121212;--alt:#1a1a1a;--card:#222;--line:#333;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;font-family:Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+h1,h2,h3{margin:0;line-height:1.15}
+.hero{background:var(--hero);color:#fff;position:relative;overflow:hidden;padding-bottom:0}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:#262626;left:50%;bottom:-300px;transform:translateX(-30%)}
+.hero i.dot{position:absolute;border-radius:50%;background:#2b2b2b}
+nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;position:relative;z-index:2;flex-wrap:wrap;gap:12px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:900;font-size:28px;color:var(--gold)}
+.logo small{display:block;font-size:8px;letter-spacing:2px;color:#999;font-weight:500;margin-top:-6px}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:12px}
+nav ul a{padding:4px 0}nav ul a:hover,nav ul a.on{color:var(--gold)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;position:relative;z-index:2;padding-top:30px}
+.hero h1{font-size:clamp(34px,5vw,48px);font-weight:900}
+.hero h3{font-size:14px;margin:14px 0 4px;font-weight:700}
+.hero p{font-size:11px;color:#bbb;margin:0 0 22px}
+.btn{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.5px;padding:8px 22px;border-bottom:2px solid var(--gold);background:transparent;color:inherit;cursor:pointer;border-top:0;border-left:0;border-right:0;font-family:inherit}
+.btn:hover{background:rgba(217,150,43,.15)}
+.search{background:#fff;color:#222;border-radius:8px;padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:10px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.search select{width:100%;padding:9px 8px;font-size:11px;border:1px solid #ddd;border-radius:4px;background:#fff;color:#444;font-family:inherit}
+.search select:disabled{background:#eee}
+.search .btn{grid-column:2;justify-self:stretch;text-align:center}
+.search .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;grid-column:1}
+.hero-car{display:block;width:min(560px,92%);margin:10px auto 0;position:relative;z-index:2}
+h2.sec{font-size:30px;font-weight:700;color:var(--gold)}
+h2.sec span{display:block;font-size:11px;font-weight:400;color:var(--muted);letter-spacing:1px;margin-bottom:2px}
+.center{text-align:center}
+section{padding:56px 0}
+.inv{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0 26px}
+.inv a{position:relative;height:110px;border-radius:8px;overflow:hidden;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:10px;font-size:11px;background-size:cover}
+.inv a:before{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.85))}
+.inv a *{position:relative}
+.inv b{font-size:13px}.inv em{font-style:normal;opacity:.7;font-size:9px}
+.inv span{font-size:10px}.inv span strong{color:#fff}
+.c1{background:linear-gradient(135deg,#3d4a3a,#1c2220)}.c2{background:linear-gradient(135deg,#4a4a4f,#1d1d22)}.c3{background:linear-gradient(135deg,#6a4a2a,#2a2118)}.c4{background:linear-gradient(135deg,#6b4a1d,#241a10)}
+.link{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.5px;padding:6px 14px;border-bottom:2px solid var(--gold)}
+.body{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:24px 0 24px;text-align:center}
+.body a{font-size:10px;font-weight:700}
+.body svg{width:100%;max-width:120px;height:auto;display:block;margin:0 auto 6px}
+.alt{background:var(--alt)}
+.alt h2{font-size:18px;font-weight:700;text-align:center}
+.alt .sub{max-width:520px;margin:10px auto 26px;text-align:center;font-size:11px;color:var(--muted)}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:26px}
+.card{background:var(--card);border-radius:6px;padding:20px 16px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.card svg{width:26px;height:26px;fill:none;stroke:var(--gold);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:12px;margin:8px 0 6px}.card p{font-size:10px;color:var(--muted);margin:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;text-align:center}
+.two h3{font-size:18px;margin-bottom:8px}.two p{font-size:11px;color:var(--muted);margin:0 auto 14px;max-width:340px}
+footer{background:var(--hero);color:#bbb;font-size:11px;padding:32px 0;text-align:center}
+footer b{color:var(--gold)}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.inv,.why{grid-template-columns:1fr 1fr}.body{grid-template-columns:repeat(3,1fr)}.two{grid-template-columns:1fr}nav ul{gap:14px;flex-wrap:wrap}}
+@media(max-width:480px){.inv,.why{grid-template-columns:1fr}.body{grid-template-columns:repeat(2,1fr)}.search,.search .row{grid-template-columns:1fr}.search .btn{grid-column:1}}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="sedan" viewBox="0 0 200 70"><path d="M10 50c0-8 6-12 16-14l30-14c20-8 48-8 64 0l24 14c12 2 42 4 44 14v6H10z" fill="#f2f2f2" stroke="#bbb"/><path d="M62 24c18-6 44-6 58 0l16 11H48z" fill="#9fb5c4"/><circle cx="48" cy="56" r="11" fill="#222"/><circle cx="48" cy="56" r="5" fill="#aaa"/><circle cx="152" cy="56" r="11" fill="#222"/><circle cx="152" cy="56" r="5" fill="#aaa"/></symbol>
+ <symbol id="truck" viewBox="0 0 200 70"><path d="M8 50V30h100l14-14h30l18 18v22z" fill="#f2f2f2" stroke="#bbb"/><path d="M118 20h26l12 14h-38z" fill="#9fb5c4"/><circle cx="45" cy="56" r="11" fill="#222"/><circle cx="45" cy="56" r="5" fill="#aaa"/><circle cx="158" cy="56" r="11" fill="#222"/><circle cx="158" cy="56" r="5" fill="#aaa"/></symbol>
+ <symbol id="suv" viewBox="0 0 200 70"><path d="M10 52V36c0-6 6-8 14-10l36-12h70l22 16c14 2 36 4 38 14v8z" fill="#f2f2f2" stroke="#bbb"/><path d="M62 18h58l16 16H56z" fill="#9fb5c4"/><circle cx="48" cy="56" r="11" fill="#222"/><circle cx="48" cy="56" r="5" fill="#aaa"/><circle cx="152" cy="56" r="11" fill="#222"/><circle cx="152" cy="56" r="5" fill="#aaa"/></symbol>
+ <symbol id="van" viewBox="0 0 200 70"><path d="M8 52V34c0-8 6-10 16-14l40-12h60c20 8 46 18 70 26v18z" fill="#f2f2f2" stroke="#bbb"/><path d="M70 14h50l36 18H64z" fill="#9fb5c4"/><circle cx="48" cy="56" r="11" fill="#222"/><circle cx="48" cy="56" r="5" fill="#aaa"/><circle cx="152" cy="56" r="11" fill="#222"/><circle cx="152" cy="56" r="5" fill="#aaa"/></symbol>
+ <symbol id="coupe" viewBox="0 0 200 70"><path d="M8 52c0-10 8-12 20-14l34-12c16-6 40-6 54 0l28 12c18 2 48 4 48 14v4H8z" fill="#f2f2f2" stroke="#bbb"/><path d="M68 28c14-4 34-4 48 0l14 10H56z" fill="#9fb5c4"/><circle cx="48" cy="56" r="11" fill="#222"/><circle cx="48" cy="56" r="5" fill="#aaa"/><circle cx="154" cy="56" r="11" fill="#222"/><circle cx="154" cy="56" r="5" fill="#aaa"/></symbol>
+</svg>
+
+<header class="hero" id="home">
+ <i class="dot" style="width:90px;height:90px;right:-30px;top:90px"></i>
+ <i class="dot" style="width:34px;height:34px;left:70px;top:330px"></i>
+ <i class="dot" style="width:30px;height:30px;right:60px;top:280px"></i>
+ <div class="wrap">
+  <nav>
+   <a class="logo" href="#home" aria-label="Voltra Automotive home"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="#d9962b" stroke-width="2.5"><circle cx="15" cy="15" r="12"/><path d="M8 16l5 5 9-12"/></svg><span>Voltra<small>AUTOMOTIVE</small></span></a>
+   <ul><li><a class="on" href="#home">Home</a></li><li><a href="#inventory">Inventory</a></li><li><a href="#financing">Finance</a></li><li><a href="#why">Services</a></li><li><a href="#why">About</a></li><li><a href="#contact">Contact Us</a></li></ul>
+  </nav>
+  <div class="hero-grid">
+   <div>
+    <h1>CFS - Voltra Automotive</h1>
+    <h3>Your Car Destination in Sioux Falls, SD</h3>
+    <p>Buying your next vehicle is easy at CFS - Voltra Automotive</p>
+    <a class="btn" href="#inventory">VIEW INVENTORY</a>
+   </div>
+   <form class="search" onsubmit="return false" aria-label="Search inventory">
+    <select aria-label="Make"><option>All Makes</option><option>Nissan</option><option>Subaru</option><option>GMC</option><option>Kia</option></select>
+    <select aria-label="Max price"><option>Max Price</option><option>$10,000</option><option>$20,000</option><option>$30,000</option></select>
+    <select aria-label="Model" disabled><option>All Models</option></select>
+    <select aria-label="Max mileage"><option>Max Mileage</option><option>50,000</option><option>100,000</option><option>150,000</option></select>
+    <div class="row"><select aria-label="Min year"><option>Min Year</option><option>2014</option><option>2017</option><option>2021</option></select><select aria-label="Max year"><option>Max Year</option><option>2021</option><option>2024</option></select></div>
+    <button class="btn" type="submit">Search Inventory</button>
+   </form>
+  </div>
+  <svg class="hero-car" viewBox="0 0 200 70" role="img" aria-label="Featured sedan"><use href="#sedan"/></svg>
+ </div>
+</header>
+
+<main>
+<section id="inventory"><div class="wrap center">
+ <h2 class="sec"><span>Featured</span>Inventory</h2>
+ <div class="inv">
+  <a class="c1" href="#"><b>2015 Nissan Quest</b><em>3.5 Platinum</em><span><strong>$17,001</strong> / 124,001 miles</span></a>
+  <a class="c2" href="#"><b>2021 Subaru Ascent</b><em>Touring</em><span><strong>$30,001</strong> / 64,001 miles</span></a>
+  <a class="c3" href="#"><b>2014 GMC Sierra 1500</b><em>SLE</em><span><strong>$16,200</strong> / 128,001 miles</span></a>
+  <a class="c4" href="#"><b>2017 Kia Optima Hybrid</b><em>EX</em><span><strong>$13,500</strong> / 80,001 miles</span></a>
+ </div>
+ <a class="link" href="#">VIEW ALL INVENTORY</a>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap center">
+ <h2 class="sec"><span>Shop By</span>Body Style</h2>
+ <div class="body">
+  <a href="#"><svg viewBox="0 0 200 70"><use href="#sedan"/></svg>Sedans</a>
+  <a href="#"><svg viewBox="0 0 200 70"><use href="#truck"/></svg>Pickups</a>
+  <a href="#"><svg viewBox="0 0 200 70"><use href="#suv"/></svg>SUVs</a>
+  <a href="#"><svg viewBox="0 0 200 70"><use href="#van"/></svg>Minivan</a>
+  <a href="#"><svg viewBox="0 0 200 70"><use href="#coupe"/></svg>Coupe</a>
+ </div>
+ <a class="link" href="#">SHOP ALL BODY STYLES</a>
+</div></section>
+
+<section class="alt" id="why"><div class="wrap">
+ <h2>Why Choose Us</h2>
+ <p class="sub">At CFS - Voltra Automotive, we're more than just a car dealership — we're your trusted partner in finding the right vehicle at the right price. From quality pre-owned cars to flexible financing, we make the buying process simple, transparent, and stress-free.</p>
+ <div class="why">
+  <div class="card"><svg viewBox="0 0 24 24"><path d="M11 17l2 2 4-4M3 11l4-4 5 1 5-1 4 4-3 3"/></svg><h3>Trustworthy</h3><p>We believe in transparency, honesty, and building long-lasting relationships with our customers.</p></div>
+  <div class="card"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-6 7-6M16 17l2 2 4-4"/></svg><h3>Customer-Focused</h3><p>Your needs come first — we listen, understand, and deliver exactly what you're looking for.</p></div>
+  <div class="card"><svg viewBox="0 0 24 24"><path d="M3 16v-4l2-5h14l2 5v4zM3 16v3h4v-3M17 16v3h4v-3"/></svg><h3>Quality Vehicles</h3><p>We hand-select every car to ensure it meets our high standards for quality and reliability.</p></div>
+  <div class="card"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><h3>Easy Financing</h3><p>No matter your credit situation, we make the financing process quick, simple, and stress-free.</p></div>
+ </div>
+ <div class="center"><a class="link" href="#">LEARN MORE</a></div>
+</div></section>
+
+<section id="financing"><div class="wrap two">
+ <div><h3>Financing</h3><p>Get pre-approved quickly and easily. We work with all types of credit to find a plan that fits your budget.</p><a class="link" href="#contact">APPLY NOW</a></div>
+ <div><h3>Value My Trade</h3><p>Find out what your vehicle is worth in just minutes. Fast, free, and no obligation.</p><a class="link" href="#contact">GET MY VALUE</a></div>
+</div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+ <p><b>CFS - Voltra Automotive</b> · Sioux Falls, SD</p>
+ <p>Call or visit us to schedule a test drive.</p>
+ <p>&copy; 2026 CFS - Voltra Automotive. All rights reserved.</p>
+</div></footer>
+</body>
+</html>
